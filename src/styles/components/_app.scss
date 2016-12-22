@@ -1,0 +1,47 @@
+/**
+ * @component app
+ * @description App root
+ * -----------------------------------------------------------------------------
+ */
+
+.c-app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-app__content {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.c-app__headline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #F5F7FA;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+
+  @include media-above("md") {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+}
+
+.c-app__intro {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  color: #E6E9ED;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @include media-above("md") {
+    font-size: 20px;
+  }
+}

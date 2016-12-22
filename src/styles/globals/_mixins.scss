@@ -1,0 +1,33 @@
+//
+// @mixin media-below
+// -----------------------------------------------------------------------------
+
+@mixin media-below($max-breakpoint) {
+  $max-width: (get-value($breakpoints, $max-breakpoint) - 1);
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+//
+// @mixin media-between
+// -----------------------------------------------------------------------------
+
+@mixin media-between($min-breakpoint, $max-breakpoint) {
+  $min-width: get-value($breakpoints, $min-breakpoint);
+  $max-width: (get-value($breakpoints, $max-breakpoint) - 1);
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+//
+// @mixin media-above
+// -----------------------------------------------------------------------------
+
+@mixin media-above($min-breakpoint) {
+  $min-width: get-value($breakpoints, $min-breakpoint);
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
