@@ -27,7 +27,7 @@ h1 {
 body {
   position: relative;
   background-color: #E9573F;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeSpeed;
@@ -64,7 +64,6 @@ body {
 }
 
 .c-app__headline {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #F5F7FA;
   font-size: 32px;
@@ -76,19 +75,5 @@ body {
   .c-app__headline {
     font-size: 48px;
     letter-spacing: -2px;
-  }
-}
-
-.c-app__intro {
-  font-family: 'Merriweather', serif;
-  font-weight: 400;
-  color: #E6E9ED;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-@media screen and (min-width: 720px) {
-  .c-app__intro {
-    font-size: 20px;
   }
 }
